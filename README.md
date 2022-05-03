@@ -1,2 +1,2 @@
-# Github-Plus
-An extension which adds some functions to Github
+# Github Plus
+An extension which adds some functions to Github.
