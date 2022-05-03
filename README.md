@@ -3,7 +3,7 @@
 An extension which adds some functions to Github.
 
 ## Features
-Currently, just adds "Open in Github.dev" button to controls. An alternative to pressing . on keyboard.
+Currently, just adds "Open in Github.dev" button to controls. An alternative to pressing <kbd>.</kbd> on keyboard.
 ![Screenshot](resources/ss1.png "Screenshot")
 
 ## Credits
