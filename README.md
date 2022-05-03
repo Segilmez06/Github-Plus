@@ -1,5 +1,7 @@
 ![Github Plus logo](resources/Banner.png "Github Plus logo")
 # Github Plus
+![Code Grade](https://api.codiga.io/project/33252/status/svg "Code Grade")
+
 An extension which adds some functions to Github.
 
 ## Get the extension
