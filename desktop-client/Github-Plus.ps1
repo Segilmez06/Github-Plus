@@ -18,6 +18,7 @@ Write-Host "Starting HTTP server"
 $htmlListener = New-Object System.Net.HttpListener
 $htmlListener.Prefixes.Add($hostUrl)
 $htmlListener.Start()
+Write-Host "Server hosted on $hostUrl"
 
 while (1 -eq 1) {
     $httpContext = $htmlListener.GetContext()
@@ -25,28 +26,29 @@ while (1 -eq 1) {
     $requestPath = $httpContext.Request.RawURL.ToString()
 
     $req = $requestPath.Substring(1)
-    if ($req.StartsWith("KillGHPlusSession")) {
+    if ($req -eq "KillGHPlusSession") {
         Write-Host "Exit requested"
         $httpResponse.Close()
         $htmlListener.Stop()
         Exit
     }
-    elseif ($req.StartsWith("CheckGHPlusSession")) {
+    elseif ($req -eq "CheckGHPlusSession") {
         Write-Host "Check requested"
         $buffer = [Text.Encoding]::UTF8.GetBytes($healthMSG)
         $httpResponse.ContentLength64 = $buffer.length
         $httpResponse.OutputStream.Write($buffer, 0, $buffer.length)
     }
     elseif ($req.StartsWith("https://github.com/")) {
+        Write-Host "Clone requested"
         $buffer = [Text.Encoding]::UTF8.GetBytes($cloneHTML)
         $httpResponse.ContentLength64 = $buffer.length
         $httpResponse.OutputStream.Write($buffer, 0, $buffer.length)
 
         $gitlink = $req
-        Write-Host "Requested clone repo from $gitLink"
+        Write-Host "Using repo $gitLink"
         Write-Host "Choosing folder to clone"
         $dialog = New-Object System.Windows.Forms.FolderBrowserDialog
-        $dialog.Description = "Select a folder to clone the repo:"
+        $dialog.Description = "Select a folder to clone the repo"
         if ($dialog.ShowDialog() -eq "OK") {
             $path = $dialog.SelectedPath
             Write-Host "Selected directory is $path"
@@ -56,7 +58,7 @@ while (1 -eq 1) {
             Write-Host "Done"
         }
         else {
-            Write-Host "Canceled"
+            Write-Host "Cancelled"
         }
     }
 }
