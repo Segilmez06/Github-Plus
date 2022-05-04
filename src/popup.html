@@ -4,83 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Addons</title>
-    <style>
-        html, body {
-            margin: 0;
-            border: 0;
-            padding: 0;
-        }
-        html {
-            height: 400px;
-            width: 250px;
-        }
-        body {
-            width: 100%;
-            height: 100%;
-
-            background-color: rgb(100, 100, 100);
-        }
-
-        .centered-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            border: 1px solid #ccc;
-            border-radius: 25px;
-            height: calc(45vh - 10px);
-            width: calc(45vh - 10px);
-            vertical-align: middle;
-            padding-top: 20px;
-            padding-left: 10px;
-            padding-right: 10px;
-            margin: 5px;
-            background-color: rgb(100, 100, 100);
-        }
-
-        .centered-container:hover {
-            background-color: rgb(80, 80, 80);
-        }
-
-        .app-icon {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto;
-        }
-        .head-title {
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 20px;
-            font-family: "Helvetica Neue",Helvetica;
-            color: #fff;
-        }
-
-        .credits {
-            font-size: 15px;
-            text-align: center;
-            margin-top: 20px;
-            font-family: "Helvetica Neue",Helvetica;
-            color: rgb(255, 255, 255);
-
-            position: absolute;
-            bottom: 0px;
-            left: 0;
-            width: 100%;
-            text-align: center;
-        }
-    </style>
+    <title>Github Plus</title>
+    <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <div class="centered-container">
+    <!-- <div class="centered-container">
         <div class="hover-div" onclick="window.open('www.sarpegilmez.com', '_blank').focus();">
             <img class="app-icon" src="img/icon_512.png" alt="Logo">
             <h1 class="head-title">Github Plus</h1>
         </div>
-    </div>
+    </div> -->
 
-    <p class="credits">Created by Segilmez06</p>
+    <div class="top-div">
+        <img class="app-icon" src="img/icon_512.png" alt="Logo">
+        <h1 class="head-title">Github<br/>Plus</h1>
+    </div>
+    <div class="main-content">
+        <div class="content-part">
+            <h3 class="content-title">Desktop client</h3>
+            <div class="option-box">
+                <p id="status" class="option">Checking client...</p>
+            </div>
+            <div class="option-box" id="terminateContainer">
+                <button id="closeBtn">Close client</button>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <a class="credits" >Created by Segilmez06</a>
+    </div>
+    <script src="popup.js"></script>
 </body>
 </html>
