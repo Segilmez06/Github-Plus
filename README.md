@@ -2,7 +2,7 @@
 # Github Plus
 ![Code Grade](https://api.codiga.io/project/33252/status/svg "Code Grade")
 
-An extension which adds some functions to Github.
+An extension that adds some functions to Github.
 
 ## Get the extension
 If you are using Microsoft Edge, use the link below to install the addon. For other Chromium-based browsers, download from [releases page](https://github.com/Segilmez06/Github-Plus/releases) or use unpacked.
