@@ -15,8 +15,8 @@ If you are using Microsoft Edge, use the link below to install the addon. For ot
 3) Replaces language bar colors with gradient.
 
 ## Screenshots
-![Screenshot](resources/ss3.png "Screenshot")
-![Screenshot](resources/ss4.png "Screenshot")
+![Screenshot](resources/actionsmall.png "Screenshot")
+![Screenshot](resources/langsmall.png "Screenshot")
 
 ## Credits
 Created and maintained by [@Segilmez06](https://github.com/Segilmez06).
