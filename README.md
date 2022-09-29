@@ -17,5 +17,9 @@ If you are using Microsoft Edge, use the link below to install the addon. For ot
 ![Screenshot](resources/actionsmall.png "Screenshot")
 ![Screenshot](resources/langsmall.png "Screenshot")
 
+## Contributing
+The best thing you can do is repoting bugs and issues. Also you can create pull requests.
+Also starring the repo will give me motivation. 😁
+
 ## Credits
 Created and maintained by [@Segilmez06](https://github.com/Segilmez06).
