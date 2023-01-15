@@ -12,10 +12,12 @@ If you are using Microsoft Edge, use the link below to install the addon. For ot
 1) Adds "Open in Github.dev" button to controls. An alternative to pressing <kbd>.</kbd> on keyboard.
 2) Adds "Clone" button to controls. You need to run desktop client to use this feature. For client installation, see [here](desktop-client/README.md).
 3) Replaces language bar colors with gradient.
+4) Adds a "Stars" tab into homepage feed area.
 
 ## Screenshots
 ![Screenshot](resources/actionsmall.png "Screenshot")
 ![Screenshot](resources/langsmall.png "Screenshot")
+![Screenshot](resources/tabs.png "Screenshot")
 
 ## Contributing
 The best thing you can do is repoting bugs and issues. Also you can create pull requests.
