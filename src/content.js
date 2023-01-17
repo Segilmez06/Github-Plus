@@ -168,8 +168,8 @@ function init(){
 
         document.getElementById('stars-ghplus').addEventListener('click', function(){
             document.getElementById('ghplus-explore-stars-container').innerHTML = loading_str;
-            let username = document.querySelector("body > div.logged-in.env-production.page-responsive.full-width > div.application-main > div > aside > div > div > details > summary > span.css-truncate.css-truncate-target.ml-1")
-            let api = `https://api.github.com/users/${username.innerHTML}/starred`;
+            let username = document.querySelector("head > meta[name='user-login']").content;
+            let api = `https://api.github.com/users/${username}/starred`;
             
             $.get(api, function( data ) {
                 let cont = document.getElementById('ghplus-explore-stars-container');
